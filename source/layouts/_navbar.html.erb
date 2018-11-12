@@ -1,0 +1,27 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to class:"navbar-wagon-brand" %>
+    <%= image_tag "logo.png" %>
+
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <%= link_to "Host", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Trips", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Messages", class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu", data-toggle="dropdown" %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <%= link_to "Profile", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "Dashboard", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "Log Out", class: "navbar-wagon-item navbar-wagon-link" %>
+        </ul>
+      </div>
+    </div>
+  </div
+
+
+

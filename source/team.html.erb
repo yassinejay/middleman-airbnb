@@ -1,0 +1,23 @@
+
+<div id="team">
+  <div class="about-content">
+    <h1>This template was buits with <i class="fas fa-heart"></i></h1>
+    <ul class= "list-inline">
+          <% ["lhauwy", "yassineJay"].each do |username| %>
+            <li>
+              <% link_to "https://kitt.lewagon.com/alumni/#{username}", target: "_blank" do %>
+                <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{username}", class: "img-circle", width:100 %>
+              <% end %>
+              <h2><%= username.capitalize %></h2>
+              <p>
+                <% link_to "https://github.com/#{username}", target: "_blank" do %>
+                  <i class="fab fa-github"></i> <%= username %>
+                <% end %>
+              </p>
+            </li>
+          <% end %>
+        </ul>
+
+  </div>
+</div>
+
